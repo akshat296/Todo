@@ -1,20 +1,20 @@
+
 import React from 'react';
 
 export default class Todo extends React.Component {
 
     handleClick = (event) => {
-        
         this.props.getId(this.props.data.id);
-
     }
+
     handleClickForDelete = (event) => {
-        
         this.props.getId1(this.props.data.id);
-
     }
+
     handleClickForEdit = (event)  => {
         this.props.getId2(this.props.data.id);
     }
+    
     render() {
         let a;
        // console.log(this.props.data.id);
@@ -38,10 +38,6 @@ export default class Todo extends React.Component {
                     <button onClick={this.handleClickForDelete}>Delete</button>
                 </td>
             </tr>
-
-
-
-
         );
     }
 }
